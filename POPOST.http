@@ -1,0 +1,6 @@
+@POPOST_HostAddress = http://localhost:5100
+
+GET {{POPOST_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
