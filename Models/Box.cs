@@ -21,5 +21,7 @@ namespace POPOST.Models
         }
 
         public DbSet<Box> Box { get; set; }
+        public DbSet<Bike> Bike { get; set; }
     }
+
 }

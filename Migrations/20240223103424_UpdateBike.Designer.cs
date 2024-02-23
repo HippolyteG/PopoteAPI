@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using POPOST.Models;
 
@@ -11,9 +12,11 @@ using POPOST.Models;
 namespace POPOST.Migrations
 {
     [DbContext(typeof(BoxDbContext))]
-    partial class BoxDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240223103424_UpdateBike")]
+    partial class UpdateBike
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
